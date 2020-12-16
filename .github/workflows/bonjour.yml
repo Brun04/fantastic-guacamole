@@ -4,5 +4,5 @@ jobs:
   dire_bonjour:
     runs-on: ubuntu-20.04
     steps:
-    - run: ls -l
+    - uses: actions/checkout@v2
     - run: cat README.md
