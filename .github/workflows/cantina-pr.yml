@@ -1,5 +1,5 @@
 # .github/workflows/cantina.yml
-name: Cantina build and Deploy to Netlify
+name: Cantina build
 on:
   pull_request:
     types: [opened, synchronize]
