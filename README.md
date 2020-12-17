@@ -1,3 +1,4 @@
 # Fantastic Guacamole
 
-Here is a test repository for using GitPod with GitHub.
+A static site integrated and deployed with GitHub Actions and Netlifly at [https://mos-eisley-cantina.netlify.app/](https://mos-eisley-cantina.netlify.app/).
+
