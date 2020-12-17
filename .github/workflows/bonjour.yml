@@ -1,9 +1,0 @@
-name: Bonjour
-on: [push]
-jobs:
-  dire_bonjour:
-    runs-on: ubuntu-20.04
-    steps:
-    - run: sudo apt-get update && sudo apt-get install -y cowsay
-    - uses: actions/checkout@v2
-    - run: cat README.md | cowsay
