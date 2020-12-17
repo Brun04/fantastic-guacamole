@@ -1,28 +1,13 @@
 # .github/workflows/cantina.yml
 name: Cantina build and Deploy to Netlify
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
 jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - run: sudo apt-get install asciidoctor -y
+      - run: sudo apt-get update -y
+      - run: sudo apt-get install asciidoctor linkchecker -y
       - uses: actions/checkout@v2
       - run: make
-
-      # ( Build to ./dist or other directory... )
-
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.1
-        with:
-          publish-dir: './dist'
-          production-branch: main
-          deploy-message: "Deploy cantina from GitHub Actions"
-          enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
+      - run: linkchecker ./dist/*.html
