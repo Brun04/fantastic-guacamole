@@ -2,8 +2,11 @@
 name: Cantina build and Deploy to Netlify
 on:
   push:
+    branches:
+      - main
     tags:
       - v1
+      - v1.*
 jobs:
   build:
     runs-on: ubuntu-18.04
