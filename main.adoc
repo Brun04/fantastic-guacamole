@@ -1,12 +1,22 @@
 = ♫ Welcome at the Mos Eisley Cantina ♫
 
+image::./assets/jawa_juice.gif[gif]
+
 == Menu
 
-image::./assets/jawa_juice.gif[gif]
+=== Drinks
 
 [square]
 * Jawa Juice 
 * Sith Lord Wine
+
+=== Dishes
+
+[square]
+* Deep-fried gorg
+* Space waffles
+
+
 
 
       ________________.  ___     .______
