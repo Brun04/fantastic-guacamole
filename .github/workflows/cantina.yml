@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - run: cd ~/bin && git clone https://github.com/asciidoc/asciidoc-py3 asciidoc-9.0.4 && git checkout 9.0.4
-      - run: ln -s ~/bin/asciidoc-9.0.4/asciidoc.py ~/bin/asciidoc && ln -s ~/bin/asciidoc-9.0.4/a2x.py ~/bin/a2x
+      - run: cd ../../bin && git clone https://github.com/asciidoc/asciidoc-py3 asciidoc-9.0.4 && git checkout 9.0.4
+      - run: ln -s ../../bin/asciidoc-9.0.4/asciidoc.py ../../bin/asciidoc && ln -s ../../bin/asciidoc-9.0.4/a2x.py ../../bin/a2x
       - uses: actions/checkout@v2
       - run: make
 
