@@ -1,35 +1,10 @@
 = ♫ Welcome at the Mos Eisley Cantina ♫
 
 
+== Menu
 
-== Hoth
-
-   _______________
- / \     / \     / \
-|------------------|======|
-| --    --    --    |==============llll----i++
-|__________________|======|
-   |             |
-   |             |
-   |             |
-   |             |
-   |             |
-   |             |
-   /`~\   /~~\   \  /~~\
-  /   ~~`~    \ /~~~~   \
- /             \         \
-
-
-== ENSG
-
-[source,bash]
-echo "Bonjour ENSG !"
-
-
-.Here the website ↓
-image:./assets/logo_ensg.png[
-"logo",width=128,
-link="https://ensg.eu"]
+* Jawa Juice
+* Sith Lord Wine
 
 
       ________________.  ___     .______

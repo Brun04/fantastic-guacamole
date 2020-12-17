@@ -8,7 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
+      - run: sudo apt-get install asciidoctor -y
       - uses: actions/checkout@v2
+      - run: make
 
       # ( Build to ./dist or other directory... )
 
@@ -22,6 +24,6 @@ jobs:
           enable-commit-comment: true
           overwrites-pull-request-comment: true
         env:
-          NETLIFY_AUTH_TOKEN: ${{ Netlify.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ Netlify.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
