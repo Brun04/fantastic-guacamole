@@ -1,9 +1,11 @@
 = ♫ Welcome at the Mos Eisley Cantina ♫
 
-
 == Menu
 
-* Jawa Juice
+image::./assets/jawa_juice.gif[gif]
+
+[square]
+* Jawa Juice 
 * Sith Lord Wine
 
 
@@ -23,4 +25,4 @@
 
 
 [NOTE]
-The ASCII arts can be fount at https://asciiart.website/index.php?art=movies/star%20wars[https://asciiart.website/index.php?art=movies/star%20wars]. This page was generated with http://asciidoc.org[AsciiDoc].
+_The ASCII arts can be fount at https://asciiart.website/index.php?art=movies/star%20wars[https://asciiart.website/index.php?art=movies/star%20wars]. This page was generated with http://asciidoc.org[AsciiDoc]._
